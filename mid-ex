@@ -1,0 +1,25 @@
+#!/bin/bash
+
+read -p "Please Enter Your IP: " MY_IP
+
+for i in {1..4}
+do
+        f=$(echo "$MY_IP" | cut -d '.' -f "$i")
+
+        if [ "$f" -ge 255 ]
+        then
+
+                echo "Your ip is not valid."
+                exit;
+        fi
+done
+
+ping -c 2 "$MY_IP" >> /dev/null 2>&1
+
+if [ $? -eq 0 ]
+then
+        echo "Server is REACHABLE"
+else
+        echo "Server is NOT REACHABLE, Please Check ASAP"
+fi
+
