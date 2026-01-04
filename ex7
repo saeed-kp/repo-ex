@@ -8,3 +8,5 @@ for ((i=1;i<=line;i++)); do
         (ping -c 2 "$ip" && echo "Hostname: $(dig -x "$ip" +short)") >> /home/"$USER"/$(date +%d%m%y) 2>&1
         echo "----------------------------------------------------------------------------" >> /home/"$USER"/$(date +%d%m%y) 2>&1
 done
+
+#Reads IP addresses from a file, pings them sequentially, and logs the results using the current date and hostname.

@@ -27,3 +27,4 @@ echo "$sum is Sum."
 sum=$((sum/i))
 echo "$sum is avg."
 
+#Takes 20 numbers and says largest and smallest

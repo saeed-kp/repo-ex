@@ -4,13 +4,12 @@ read -p "Enter 1st Number: " var1
 
 if [ $var1 -eq 10 ]
 then
-echo "This is 10!"
-
+  echo "This is 10!"
 elif [ $var1 -gt 10 ]
-then
+  then
 echo "$var1 is bigger than 10."
-
 else
-echo "10 is bigger than $var1."
+  echo "10 is bigger than $var1."
 fi
 
+#Takes a number, compares it to 10 and says it's larger or equal r smaller
