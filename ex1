@@ -12,3 +12,4 @@ else
   echo "10 is bigger than $var1."
 fi
 
+#Takes a number, compares it to 10 and says it's larger or equal r smaller
