@@ -9,3 +9,5 @@ else
 fi
 
 #As far as I understood, SSH only accepts passwords via keyboard so I had to use "sshpass".
+
+#Gets IP, Username and Password along script name as values, ping IP, if pingable, copies /etc/passwd to /home/user/ of destination IP. If not pingable says no accessible.
