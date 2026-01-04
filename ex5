@@ -7,3 +7,5 @@ find /home/"$USER" -type f -name "[0-9][0-9][0-9][0-9][0-9][0-9]" -mtime +2 -exe
 at now + 24 hours <<EOT
 /home/wtf/ex5
 EOT
+
+#Saves first and third fields of /etc/passwd everyday in a file, named same date and delete it after 2 days.
