@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "rsync -av /home/"$USER" /bu/" >> /home/"$USER"/.bash_logout

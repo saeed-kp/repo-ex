@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read -p "Enter absolute path of your file: " file
+line=$(wc -l < "$file")
+
+for ((i=1;i<=line;i++)); do
+        ip=$(awk -v n="$i" 'NR==n {print $0}' "$file")
+        (ping -c 2 "$ip" && echo "Hostname: $(dig -x "$ip" +short)") >> /home/"$USER"/$(date +%d%m%y) 2>&1
+        echo "----------------------------------------------------------------------------" >> /home/"$USER"/$(date +%d%m%y) 2>&1
+done
