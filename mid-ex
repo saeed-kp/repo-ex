@@ -23,3 +23,4 @@ else
         echo "Server is NOT REACHABLE, Please Check ASAP"
 fi
 
+#Takes an IP, if pingable prints reachable, if not prints not reachable. If the IP isn't proper, prints not valid.
