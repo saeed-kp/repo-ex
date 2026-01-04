@@ -7,3 +7,5 @@ if [ $? -eq 0 ]; then
 else
         echo "The server is not accessible."
 fi
+
+#As far as I understood, SSH only accepts passwords via keyboard so I had to use "sshpass".
