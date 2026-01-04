@@ -5,4 +5,4 @@ do
   echo $i
 done
 
-#Pints 5 to 50.
+#Pings 5 to 50.
