@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "rsync -av /home/"$USER" /bu/" >> /home/"$USER"/.bash_logout
+echo "tar -cJf \$(date +F).tar.xz "$HOME"/" >> "$HOME/.bash_logout"
 
 #Takes backup of /home/user while logging out.
